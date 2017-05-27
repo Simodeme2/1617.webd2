@@ -1,0 +1,385 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+p{
+    font-family: Open-sans, sans-serif;
+}
+
+body{
+    
+}
+
+.nav{
+    display: none;
+}
+
+.header{
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    background-image: url(../assets/background_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    background-size: cover;
+}
+
+.header_square{
+    
+    background-color: rgba(16, 79, 85, 0.3);
+    width: 100%;
+    height: 200px;
+}
+
+.header_titel{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color:  #ccdbdc;
+    margin-left: calc(50% - 127.5px);
+    margin-top: 50px;
+}
+
+.content{
+    width: 100%;
+}
+
+.home_tekst{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #104f55;
+}
+
+.greet{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.explain{
+    text-align: center;
+    width: 90%;
+}
+
+.ptc{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.square{
+    position: absolute;
+    background-color: rgba(16, 79, 85, 0.6);
+    z-index: 1;
+    height: 200px;
+    width: 100%;
+}
+
+.square_tekst{
+    z-index: 2;
+    color: #FFF; 
+    margin-left: 5%;
+}
+
+
+.portfront{
+    margin-top: 25px;
+    background-image: url("../assets/portfolioimg_mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.teamfront{
+    background-image: url("../assets/teamimg_mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.contfront{
+    background-image: url("../assets/contactimg_mobile.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.square_link{
+    z-index: 9;
+    display: flex;
+}
+
+.square_link a{
+    position: absolute;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #ccdbdc;
+    right: 5%;
+    bottom: 20;
+}
+
+.square_link a:hover{
+    color: #9ad1d4;
+}
+
+.contact_home{
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 50px;
+    color: #104f55;
+}
+
+.contact_home input{
+    padding: 15px;
+    width: 45%;
+    background-color: #104f55;
+    color: #ccdbdc;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+
+footer{
+    background-color: #104f55;
+    display: flex;
+    height: 150px;
+    margin-top: 50px;
+    color: #ccdbdc;
+}
+
+footer h2{
+    justify-content: center;
+}
+
+
+
+/* ALL SUB PAGES */
+
+.sub_header{
+    position: relative;
+    background-image: url("../assets/portfolioimg_mobile.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+}
+
+.sub_header h2{
+    position: absolute;
+    z-index: 9;
+    color: #ccdbdc;
+    right: 25px;
+    top: 25px;
+}
+
+.sub_overlay{
+    position: absolute;
+    background-color: rgba(16, 79, 85, 0.6);
+    z-index: 1;
+    height: 200px;
+    width: 100%;
+}
+
+
+
+/* PORTFOLIO */
+
+.woordje{
+    width: 90%;
+    margin: 75px auto;
+    text-align: center;
+    color: #104f55;
+}
+
+.woordje h2{
+    margin-bottom: 25px;
+}
+
+.all_product{
+    text-align: justify;
+    margin-top: 75px;
+}
+
+.product{
+    width: 100%;
+    background-color: #ccdbdc;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.product p{
+    width: 80%;
+    margin: 25px 10% 25px;
+    color: #104f55;
+}
+
+.product .alt{
+    background-color: #ccdbdc;
+    height: 200px;
+}
+
+.product img{
+    width: 100%;
+}
+
+.product h3,h4,h5{
+    color: #104f55;
+    float: left;
+    margin-left: 10%;
+    margin-top: 25px;
+}
+
+
+.clear{
+    clear: both;
+}
+
+.underline{
+    width: 50px;
+    background-color: #104f55;
+    height: 2px;
+    margin-top: 5px;
+    margin-left: 10%;
+}
+
+
+/* TEAM */
+
+.team{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.worker{
+    margin-top: 25px;
+}
+
+.worker img{
+    width: 100%;
+}
+
+.worker h2, h4{
+
+}
+
+
+
+
+
+/* CONTACT */
+
+form{
+    width: 90%;
+    height: 550px;
+    background-color: #ccdbdc;
+    margin: 25px auto 0;
+    padding-top: 25px;
+}
+
+
+.contact{
+    width: 200px;
+    height: 30px;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: 5%;
+    border: none;
+    padding: 15px 0px;
+    text-indent: 20px;
+}
+
+form textarea{
+    width: 90%;
+    margin-left: 5%;
+    max-width: 90%;
+    min-height: 200px;
+    max-height: 200px;
+    border: none;
+    text-indent: 20px;
+    padding: 15px 0 0 0;
+}
+
+.btn{
+    padding: 15px;
+    width: 45%;
+    background-color: #104f55;
+    color: #ccdbdc;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-right: 5%;
+    margin-top: 25px;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+
+.btn:hover{
+    background-color: #32746d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NAV HAMBURGER NAV */
+
+.hamburger_container {
+    display: block;
+    position: absolute;
+    z-index: 9;
+}
+
+.hamburger {
+    margin-top: 25px;
+    margin-left: 25px;
+    display: block;
+    width: 30px;
+}
+
+.nav_grid {
+    width: 100%;
+    display: block;
+}
+
+.column-4 {
+    display: none;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.column-4 a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-weight: 600;
+    margin-top: 2px;
+    padding: 10px 0px;
+    background-color: #50514f;
+    font-size: 1.2em;
+    line-height: 20px;
+}
