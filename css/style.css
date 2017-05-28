@@ -27,6 +27,10 @@ body{
     background-size: cover;
 }
 
+.header video{
+    display: none;
+}
+
 .header_square{
     
     background-color: rgba(16, 79, 85, 0.3);
@@ -99,14 +103,21 @@ body{
 }
 
 .teamfront{
-    background-image: url("../assets/teamimg_mobile.png");
+    background-image: url("../assets/teamimg_mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.dienstfront{
+    background-image: url("../assets/dienstenimg_mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
 }
 
 .contfront{
-    background-image: url("../assets/contactimg_mobile.png");
+    background-image: url("../assets/contactimg_mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -150,16 +161,43 @@ body{
     transition: all 0.4s ease;
 }
 
+.contact_home input:hover{
+    background-color: #32746d;
+}
+
 footer{
     background-color: #104f55;
-    display: flex;
+    position: relative;
+    width: 100%;
     height: 150px;
     margin-top: 50px;
+    padding-top: 25px;
     color: #ccdbdc;
 }
 
 footer h2{
-    justify-content: center;
+    margin-left: 5%;
+}
+
+footer .adres{
+    width: 50%;
+    text-align: right;
+    position: absolute;
+    right: 5%;
+    top: 35px;
+}
+
+footer .social_media{
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 65px;
+}
+
+footer .social_media img{
+    width: 15%;
+    margin-right: 10px;
+    float: left;
+    max-width: 35px;
 }
 
 
@@ -212,7 +250,8 @@ footer h2{
 }
 
 .product{
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
     background-color: #ccdbdc;
     padding-bottom: 25px;
     margin-bottom: 25px;
@@ -233,7 +272,7 @@ footer h2{
     width: 100%;
 }
 
-.product h3,h4,h5{
+.product h3, .product h4, .product h5{
     color: #104f55;
     float: left;
     margin-left: 10%;
@@ -263,14 +302,20 @@ footer h2{
 
 .worker{
     margin-top: 25px;
+    background-color: #ccdbdc;
+    max-width: 300px;
+    margin: 0 auto 25px;
+    padding: 25px;
 }
 
 .worker img{
     width: 100%;
+    max-width: 300px;
 }
 
-.worker h2, h4{
-
+.worker h2, .worker h4{
+    text-align: left;
+    color: #104f55;
 }
 
 
@@ -278,6 +323,13 @@ footer h2{
 
 
 /* CONTACT */
+
+.contactpage{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 25px;
+    color: #104f55;
+}
 
 form{
     width: 90%;
@@ -374,12 +426,213 @@ form textarea{
     width: 100%;
     text-align: center;
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    font-weight: 600;
-    margin-top: 2px;
+    color: #104f55;
     padding: 10px 0px;
-    background-color: #50514f;
+    background-color: #ccdbdc;
     font-size: 1.2em;
     line-height: 20px;
+}
+
+.column-4 a:hover{
+    background-color: #32746d;
+    color: #ccdbdc;
+}
+
+
+/* GOOGLE MAP */
+
+.map{
+    width: 90%;
+    margin-left: 5%;
+    background-color: #ccdbdc;
+    padding: 25px 0;
+    margin-top: 25px;
+}
+
+.map h2{
+    margin-left: 5%;
+    margin-bottom: 25px;
+    color: #104f55;
+}
+
+#divMap{
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1024px) {
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    background-image: none;
+    height: 100vh;
+    width: 60%;
+    float: left;
+}
+
+.header video{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.header_square{
+    height: 100vh;
+}
+
+.header_titel{
+    display: block;
+    text-align: left;
+    margin-left: 10%;
+    font-size: 24pt;
+    margin-top: 25vh;
+}
+
+.home_tekst{
+    position: absolute;
+    top: 50vh;
+    left: 10%;
+    color: #ccdbdc;
+    font-size: 16pt;
+    width: 35%;
+    text-align: left;
+    display: block;
+}
+
+.greet{
+    text-align: left;
+}
+
+.explain{
+    text-align: left;
+}
+
+.ptc{
+    height: 25vh;
+    margin-top: 0;
+}
+
+.ptc .square{
+    height: 25vh;
+}
+
+.contact_home input{
+    width: 25%;
+}
+
+
+/* SUB PAGES */
+
+.nav{
+    position: absolute;
+    display: block;
+    right: 10px;
+    z-index: 999;
+}
+
+.nav a{
+    float: left;
+    color: #ccdbdc;
+}
+
+.hamburger_container{
+     display: none;
+}
+
+.sub_header h2{
+    float: left;
+    left: 10%;
+}
+
+.all_product{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.product{
+    width: 31.666%;
+    float: left;
+    margin: 0;
+    height: 400px;
+    overflow: hidden;
+}
+
+.product .mid{
+    margin: 0 2.5%;
+}
+
+/* TEAM PAGE */
+
+.team{
+    width: 80%;
+}
+
+.worker{
+    margin-top: 25px;
+    max-width: 300px;
+    padding: 25px;
+    
+    margin: auto;
+    float: left;
+    width: 30%;
+}
+
+/* CONTACT PAGE */
+
+.contactpage{
+    margin-left: 10%;
+}
+
+form{
+    width: 80%;
+    height: 335px;
+}
+
+
+.contact{
+    float: left;
+    width: 90%;
+}
+
+.form_left{
+    float: left;
+    width: 50%;
+}
+
+.form_right{
+    float: right;
+    width: 50%;
+}
+
+form textarea{
+    margin-left: 0;
+    width: 95%;
+}
+
+.btn{
+    width: 22.5%;
+}
+
+.map{
+    width: 80%;
+    margin: 25px auto;
+}
+
 }
