@@ -25,6 +25,7 @@ body{
     background-position: center center;
     background-size: 100%;
     background-size: cover;
+    color: #104f55;
 }
 
 .header video{
@@ -33,7 +34,7 @@ body{
 
 .header_square{
     
-    background-color: rgba(16, 79, 85, 0.3);
+    background-color: rgba(204, 219, 220, 0.3);
     width: 100%;
     height: 200px;
 }
@@ -44,9 +45,9 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    color:  #ccdbdc;
     margin-left: calc(50% - 127.5px);
     margin-top: 50px;
+
 }
 
 .content{
@@ -81,7 +82,8 @@ body{
 
 .square{
     position: absolute;
-    background-color: rgba(16, 79, 85, 0.6);
+    background-color: rgba(204, 219, 220, 0.3);
+    
     z-index: 1;
     height: 200px;
     width: 100%;
@@ -89,7 +91,7 @@ body{
 
 .square_tekst{
     z-index: 2;
-    color: #FFF; 
+    color: #104f55; 
     margin-left: 5%;
 }
 
@@ -117,7 +119,7 @@ body{
 }
 
 .contfront{
-    background-image: url("../assets/contactimg_mobile.jpg");
+    background-image: url("../assets/contact_mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -132,7 +134,7 @@ body{
     position: absolute;
     text-decoration: none;
     padding: 5px 10px;
-    color: #ccdbdc;
+    color: #104f55;
     right: 5%;
     bottom: 20;
 }
@@ -254,7 +256,8 @@ footer .social_media img{
     margin-left: 5%;
     background-color: #ccdbdc;
     padding-bottom: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
+    overflow: hidden;
 }
 
 .product p{
@@ -319,7 +322,32 @@ footer .social_media img{
 }
 
 
+/* DIENSTEN */
 
+.dienst_icons{
+    width: 90%;
+    
+    margin-left: 5%;
+}
+
+.dienst{
+    padding: 25px 0;
+    margin-bottom: 25px;
+    background-color: #ccdbdc;
+}
+
+.dienst img{
+    width: 25%;
+    margin-left: 5%;
+    
+}
+
+.dienst p{
+    float: right;
+    margin-right: 5%;
+    font-size: 16pt;
+    color: #104f55;
+}
 
 
 /* CONTACT */
@@ -415,13 +443,13 @@ form textarea{
     display: block;
 }
 
-.column-4 {
+.column-5 {
     display: none;
     width: 100%;
     transition: 0.3s;
 }
 
-.column-4 a {
+.column-5 a {
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -433,7 +461,7 @@ form textarea{
     line-height: 20px;
 }
 
-.column-4 a:hover{
+.column-5 a:hover{
     background-color: #32746d;
     color: #ccdbdc;
 }
@@ -459,6 +487,19 @@ form textarea{
     width: 90%;
     height: 400px;
     margin: 0 auto;
+}
+
+/* PRODUCT PAGE */
+
+.keymusic{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.keymusic img{
+    width: 100%;
+    max-width: 600px;
 }
 
 
@@ -506,22 +547,7 @@ form textarea{
 }
 
 .home_tekst{
-    position: absolute;
-    top: 50vh;
-    left: 10%;
-    color: #ccdbdc;
-    font-size: 16pt;
-    width: 35%;
-    text-align: left;
-    display: block;
-}
-
-.greet{
-    text-align: left;
-}
-
-.explain{
-    text-align: left;
+    display: none;
 }
 
 .ptc{
@@ -533,6 +559,10 @@ form textarea{
     height: 25vh;
 }
 
+.square_tekst{
+    font-size: 16pt;
+}
+
 .contact_home input{
     width: 25%;
 }
@@ -542,14 +572,21 @@ form textarea{
 
 .nav{
     position: absolute;
-    display: block;
+    display: inline-block;
     right: 10px;
     z-index: 999;
+    width: 400px;
+}
+
+ul{
+    list-style-type:none
 }
 
 .nav a{
     float: left;
     color: #ccdbdc;
+    text-decoration: none;
+    margin: 25px 10px 0;
 }
 
 .hamburger_container{
@@ -561,20 +598,24 @@ form textarea{
     left: 10%;
 }
 
+/* PORTFOLIO PAGE */
+
 .all_product{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
 .product{
     width: 31.666%;
+    margin-left: 0;
     float: left;
     margin: 0;
-    height: 400px;
+    height: 500px;
     overflow: hidden;
+    margin: 0 0 25px;
 }
 
-.product .mid{
+.mid{
     margin: 0 2.5%;
 }
 
@@ -582,16 +623,20 @@ form textarea{
 
 .team{
     width: 80%;
+    height: 400px;
+
 }
 
 .worker{
-    margin-top: 25px;
-    max-width: 300px;
-    padding: 25px;
-    
-    margin: auto;
+
+    height: 350px;
+    padding: 0;
     float: left;
-    width: 30%;
+    width: 31.666%;
+}
+
+.worker h2, .worker h4{
+    margin-left: 25px;
 }
 
 /* CONTACT PAGE */

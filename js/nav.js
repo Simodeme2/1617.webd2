@@ -1,5 +1,5 @@
 var button = document.querySelector(".hamburger");
-var nav = document.querySelectorAll(".column-4");
+var nav = document.querySelectorAll(".column-5");
 var count = 0;
 
 button.addEventListener("click", openAndClose);
